@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scheduler</title>
+</head>
+
+<style>
+
+body {
+height: fill;
+  background-image: linear-gradient(to bottom right, #ffffff, #bccff4, #96aedd, #6e92d8, #5a7ec4, #456bb7, #3c63b2, #345cad, #345cad, #3c63b2, #456bb7, #5a7ec4, #6e92d8, #96aedd, #bccff4, #ffffff);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+h1{
+text-align: center;
+font-size: 50px;
+color: white;
+padding: 40px;
+}
+
+p {
+text-align: center;
+font-size: 20px;
+}
+
+h2 {
+text-align: center;
+font-size: 30px;
+}
+
+
+div.whitebox{
+border-radius: 25px;
+  margin: 50px;
+  background-color: #ffffff;
+padding: 20px;
+
+}
+
+
+button {
+font-size: 20px;
+padding: 5px;
+}
+
+div.employees {
+
+  background-color: #adc9f4;
+ width: 15%;
+height: 300px;
+  overflow: scroll;
+
+
+
+}
+
+
+
+table, th, td {
+
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 15px;
+font-size: 20px;
+}
+
+th {
+text-align: left;
+
+}
+
+
+td {
+text-align: center;
+
+}
+
+
+table {
+
+
+}
+
+
+
+
+
+</style>
+<body>
+
+<h1>Scheduler</h1>
+<div class = "whitebox">
+
+
+
+
+
+<h2 id="retail">Retail</h2>
+
+
+<center><button type="button" onclick="myFunction()">Change to Pharmacy</button></center>
+
+
+<br>
+
+<br>
+
+
+
+<div style="margin: 15px; width: 200px; float: right;">
+
+<table>
+
+
+
+
+<tr>
+<th style="text-align:center", th colspan= "7">June</th>
+</tr>
+
+
+
+<tr>
+<th style="text-align:center", th colspan= "7">
+Week of xx - xx
+</th>
+</tr>
+
+
+
+<tr>
+<th style="text-align:center">
+Sunday
+</th>
+
+<th style="text-align:center">
+Monday
+</th>
+
+
+<th style="text-align:center">
+Tuesday
+</th>
+
+
+<th style="text-align:center">
+Wednesday
+</th>
+
+<th style="text-align:center">
+Thursday
+</th>
+
+
+<th style="text-align:center">
+Friday
+</th>
+
+<th style="text-align:center">
+Saturday
+</th>
+
+</tr>
+
+
+
+<tr>
+<th style="text-align:center", th colspan= "7">
+Management
+</th>
+</tr>
+
+
+
+<tr>
+<th>
+Smith, Arthur
+</th>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+
+</tr>
+
+
+
+<tr>
+<th>
+Charter, Mary-Sue
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+</th>
+</tr>
+
+
+<tr>
+<th>
+James, Charles
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+</th>
+</tr>
+
+<tr>
+<th style="text-align:center", th colspan= "7">
+Associates
+</th>
+</tr>
+
+
+<tr>
+<th>
+James, Charles
+</th>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+</tr>
+
+
+<tr>
+<th>
+Green, Oliver
+</th>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+</tr>
+
+
+<tr>
+<th>
+Green, Midori
+</th>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+<td>9:00AM - 5:00PM</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="width: 100px; float: left">
+
+<div class ="employees"><ul>
+<li>Arthur Smith</li>
+<li>Mary-Sue Charter</li>
+<li>Charles James</li>
+<li>Oliver Green</li>
+<li>Midori Green</li>
+<li>Red Aka</li>
+<li>Arthur Smith</li>
+<li>Mary-Sue Charter</li>
+<li>Arthur Smith</li>
+<li>Mary-Sue Charter</li>
+<li>Arthur Smith</li>
+<li>Mary-Sue Charter</li>
+<li>Arthur Smith</li>
+<li>Mary-Sue Charter</li>
+<li>Arthur Schmitt</li>
+<li>Mary-Sue Charter</li>
+<li>Arthur Smith</li>
+<li>Mary-Sue Charter</li>
+</ul></div>
+
+</div>
+
+
+
+
+
+</div>
+
+<script>
+
+function myFunction() {
+ document.getElementById("retail").innerHTML = "Pharmacy";
+}
+
+
+
+ 
+
+
+</script>
+
+
+</body>
+</html>
